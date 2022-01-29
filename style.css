@@ -4,7 +4,10 @@
 
 @layer base {
   body {
-    @apply font-body;
+    @apply font-body text-base;
+  }
+  h1 {
+    @apply font-heading text-7xl font-bold;
   }
 }
 
@@ -19,7 +22,7 @@
     @apply flex flex-col justify-center items-center;
   }
   .container {
-    @apply py-16 md:px-16 px-8 w-screen;
+    @apply py-16 md:px-16 px-8 w-screen mx-auto;
   }
   .col-md-2 {
     @apply grid-cols-1 md:grid-cols-2;

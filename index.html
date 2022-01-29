@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="min-h-screen">
+    <div class="min-h-screen relative">
       <header class="flex justify-between border-b border-b-[#EAE8F3] py-6">
         <a href="#">
           <img src="./images/logo.svg" alt="Logo">
         </a>
-        <nav class="navbar">
+        <nav class="navbar hidden">
           <a href="#">FEATURES</a>
           <a href="#">PRICING</a>
           <a href="#">WATCH A DEMO</a>
@@ -26,20 +26,56 @@
           <a href="#" class="btn btn-primary">SIGN UP</a>
         </div>
       </header>
-      <section>
-        <h1>
-          We Help you to Grow Your BUSINESS
-        </h1>
+      <section class="container text-center max-w-5xl">
+        <h1>We Help you to Grow Your BUSINESS</h1>
         <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way
         everything joy alteration boisterous the attachment.</p>
-        <a href="#">GET STARTED</a>
-
-        <img src="./images/card-audience.svg" alt="Audience Card">
-        <img src="./images/card-overview.svg" alt="Overview Card">
-        <img src="./images/card-customers.svg" alt="Customers Card">
-        <img src="./images/card-employees.svg" alt="Employees Card">
+        <a href="#" class="btn btn-primary">GET STARTED</a>
       </section>
+      <!-- <img src="./images/card-audience.svg" alt="Audience Card" class="absolute top-2/4">
+      <img src="./images/card-overview.svg" alt="Overview Card" class="absolute bottom-0">
+      <img src="./images/card-customers.svg" alt="Customers Card" class="absolute">
+      <img src="./images/card-employees.svg" alt="Employees Card" class="absolute bottom-0"> -->
     </div>
+    <!-- <figure class="grid-center grid-cols-2 md:grid-cols-5 
+      max-w-5xl mx-auto md:gap-x-16">
+      <img src="./images/slack.svg" alt="Slack logo">
+      <img src="./images/google.svg" alt="Google logo">
+      <img src="./images/deloitte.svg" alt="Deloitte logo">
+      <img src="./images/IBM.svg" alt="IBM logo">
+      <img src="./images/samsung.svg" alt="Samsung logo">
+    </figure> -->
+    <main>
+      <div class="grid-center col-md-2">
+        <figure>
+          <img src="./images/about-image-1.svg" alt="">
+        </figure>
+        <section>
+          <h4>Boost Your Work</h4>
+          <h2>Boost Your Productivity</h2>
+          <p>From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household
+          applauded incommode. Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient
+          not. Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.</p>
+          <a href="#" class="btn btn-primary">Explore Features</a>
+        </section>
+      </div>
+      <div class="grid-center col-md-2">
+        <section>
+          <h4>Boost Your Work</h4>
+          <h2>Boost Your Productivity</h2>
+          <p>From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was
+            household
+            applauded incommode. Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance
+            sufficient
+            not. Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up
+            as.</p>
+          <a href="#" class="btn btn-primary">Explore Features</a>
+        </section>
+        <figure>
+          <img src="./images/about-image-2.svg" alt="">
+        </figure>
+      </div>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
