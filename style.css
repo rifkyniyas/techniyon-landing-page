@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body;
+  }
+}
+
+@layer utilities {
+  .grid-center {
+    @apply grid justify-items-center content-center;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+  .container {
+    @apply py-16 md:px-16 px-8 w-screen;
+  }
+  .col-md-2 {
+    @apply grid-cols-1 md:grid-cols-2;
+  }
+  .col-md-3 {
+    @apply grid-cols-1 md:grid-cols-3;
+  }
+  .hide-mobile {
+    @apply hidden md:block !important;
+  }
+  .hide-desktop {
+    @apply block md:hidden !important;
+  }
+  .bg-image-cover {
+    @apply bg-cover bg-no-repeat bg-center bg-scroll;
+  }
+}
+
+@layer components {
+  /* Navbar */
+  .navbar {
+    @apply navbar-mobile md:navbar-desktop;
+  }
+  .navbar-mobile {
+    width: calc(100% - 4rem);
+    @apply absolute top-full left-auto rounded right-auto flex flex-col items-center py-8 
+    bg-white gap-y-4;
+  }
+  .navbar-desktop {
+    @apply md:static md:flex md:bg-transparent md:flex-row md:items-center md:mr-0 
+    md:w-fit md:border-t-0 md:text-white md:px-5 md:rounded-bl-xl md:py-0 !important;
+  }
+  .navbar a {
+    @apply mx-3 text-gray text-sm;
+  }
+  /* Buttons */
+  .btn {
+    @apply inline-block py-2 px-5 text-sm font-semibold 
+    rounded shadow-md !important;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-50 !important;
+  }
+  .btn-secondary {
+    @apply bg-white text-black-dark !important;
+  }
+}
