@@ -19,6 +19,9 @@
   hr {
     @apply bg-[#F1F3F8] border-none h-[1px];
   }
+  footer {
+    @apply bg-black-dark text-white;
+  }
 }
 
 @layer utilities {
