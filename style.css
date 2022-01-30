@@ -93,6 +93,16 @@
   .pricing-card a {
     @apply w-full rounded-full rounded-tr-none !important;
   }
+  /* FAQ container */
+  .faq-container {
+    @apply shadow-md py-4 px-8;
+  }
+  .faq-container button {
+    @apply font-semibold text-lg;
+  }
+  .faq-container p {
+    @apply text-[#363049] text-sm hidden;
+  }
   /* Buttons */
   .btn {
     @apply inline-block py-2 px-5 text-sm font-semibold 
