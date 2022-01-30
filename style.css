@@ -71,6 +71,20 @@
   .navbar a {
     @apply mx-3 text-gray text-sm;
   }
+  /* About us section */
+  .about-us-section {
+    @apply py-2;
+  }
+  .about-us-section h4 {
+    @apply text-lg font-medium w-fit rounded-lg text-primary bg-secondary
+      py-3 px-7 mb-10;
+  }
+  .about-us-section h2 {
+    @apply font-medium text-5xl mb-8;
+  }
+  .about-us-section p {
+    @apply text-black-light text-lg mb-12;
+  }
   /* Pricing card */
   .pricing-card {
     @apply border h-max font-medium border-[#F1F3F8] rounded-[40px];
