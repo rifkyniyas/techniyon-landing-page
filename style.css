@@ -6,8 +6,18 @@
   body {
     @apply font-body text-base;
   }
+  h1,
+  h2 {
+    @apply font-heading font-bold;
+  }
   h1 {
-    @apply font-heading text-7xl font-bold;
+    @apply text-7xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  hr {
+    @apply bg-[#F1F3F8] border-none h-[1px];
   }
 }
 
@@ -58,15 +68,43 @@
   .navbar a {
     @apply mx-3 text-gray text-sm;
   }
+  /* Pricing card */
+  .pricing-card {
+    @apply border h-max font-medium border-[#F1F3F8] rounded-[40px];
+  }
+  .pricing-card h3 {
+    @apply text-xl text-[#A0A0A0];
+  }
+  .pricing-card div {
+    @apply flex items-end;
+  }
+  .pricing-card h4 {
+    @apply text-6xl text-[#2F2F2F] mr-1;
+  }
+  .pricing-card p {
+    @apply text-3xl text-[#C6C6C6];
+  }
+  .pricing-card h5 {
+    @apply font-heading  text-[#929292] text-sm;
+  }
+  .pricing-card li {
+    @apply text-lg text-[#393939];
+  }
+  .pricing-card a {
+    @apply w-full rounded-full rounded-tr-none !important;
+  }
   /* Buttons */
   .btn {
     @apply inline-block py-2 px-5 text-sm font-semibold 
-    rounded shadow-md !important;
+    rounded shadow-md hover:bg-opacity-50 !important;
   }
   .btn-primary {
-    @apply bg-primary text-white hover:bg-opacity-50 !important;
+    @apply bg-primary text-white  !important;
   }
   .btn-secondary {
     @apply bg-white text-black-dark !important;
+  }
+  .btn-tertiary {
+    @apply bg-tertiary text-white !important;
   }
 }
