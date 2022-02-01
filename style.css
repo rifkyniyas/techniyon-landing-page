@@ -17,7 +17,7 @@
     @apply text-4xl;
   }
   hr {
-    @apply bg-[#F1F3F8] border-none h-[1px] my-10;
+    @apply bg-[#F1F3F8] border-none h-[2px] my-10;
   }
   footer {
     @apply bg-black-dark text-white;
@@ -95,28 +95,28 @@
   }
   /* Pricing card */
   .pricing-card {
-    @apply border h-max font-medium border-[#F1F3F8] rounded-[40px] px-11 pt-12;
+    @apply h-max font-medium border-2 border-[#F1F3F8] rounded-[40px] pt-12;
   }
   .pricing-card h3 {
-    @apply text-xl text-[#A0A0A0] mb-2;
+    @apply text-xl text-[#A0A0A0] mb-2 px-11;
   }
   .pricing-card div {
-    @apply flex items-end;
+    @apply flex items-end px-11;
   }
   .pricing-card h4 {
     @apply text-6xl text-[#2F2F2F] mr-2;
   }
   .pricing-card p {
-    @apply text-3xl text-[#C6C6C6];
+    @apply text-3xl text-[#C6C6C6] line-through decoration-[#FF4E4E] decoration-2;
   }
   .pricing-card h5 {
-    @apply font-heading  text-[#929292] text-sm mb-4;
+    @apply font-heading  text-[#929292] text-sm mb-4 px-11;
   }
   .pricing-card li {
-    @apply text-lg text-[#393939] mb-3;
+    @apply text-lg text-[#393939] mb-3 px-11;
   }
   .pricing-card a {
-    @apply w-full rounded-full rounded-tr-none mt-16 !important;
+    @apply w-full rounded-full rounded-tr-none mt-16 py-5 !important;
   }
   /* FAQ container */
   .faq-container {
@@ -140,12 +140,14 @@
   }
   /* Buttons */
   .btn {
-    @apply inline-block py-2 px-5 text-sm font-semibold 
+    /* py-4 px-6 */
+    @apply inline-block py-3 px-8  text-sm font-semibold 
     rounded shadow-md hover:bg-opacity-50 hover:no-underline !important;
   }
   .btn-primary {
     @apply bg-primary text-white  !important;
   }
+  /* hover:border-primary hover:bg-transparent hover:text-black-dark */
   .btn-secondary {
     @apply bg-white text-black-dark !important;
   }
