@@ -11,16 +11,19 @@
     @apply font-heading font-bold;
   }
   h1 {
-    @apply text-7xl;
+    @apply text-7xl mb-5;
   }
   h2 {
     @apply text-4xl;
   }
   hr {
-    @apply bg-[#F1F3F8] border-none h-[1px];
+    @apply bg-[#F1F3F8] border-none h-[1px] my-10;
   }
   footer {
     @apply bg-black-dark text-white;
+  }
+  footer a {
+    @apply hover:underline hover:text-secondary;
   }
 }
 
@@ -71,10 +74,15 @@
   .navbar a {
     @apply mx-3 text-gray text-sm;
   }
-  /* About us section */
-  .about-us-section {
-    @apply py-2;
+  .blur-circle {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    @apply bg-primary w-64 h-64 blur-[500px];
   }
+  /* About us section */
+  /* .about-us-section {
+    @apply pl-20;
+  } */
   .about-us-section h4 {
     @apply text-lg font-medium w-fit rounded-lg text-primary bg-secondary
       py-3 px-7 mb-10;
@@ -87,32 +95,32 @@
   }
   /* Pricing card */
   .pricing-card {
-    @apply border h-max font-medium border-[#F1F3F8] rounded-[40px];
+    @apply border h-max font-medium border-[#F1F3F8] rounded-[40px] px-11 pt-12;
   }
   .pricing-card h3 {
-    @apply text-xl text-[#A0A0A0];
+    @apply text-xl text-[#A0A0A0] mb-2;
   }
   .pricing-card div {
     @apply flex items-end;
   }
   .pricing-card h4 {
-    @apply text-6xl text-[#2F2F2F] mr-1;
+    @apply text-6xl text-[#2F2F2F] mr-2;
   }
   .pricing-card p {
     @apply text-3xl text-[#C6C6C6];
   }
   .pricing-card h5 {
-    @apply font-heading  text-[#929292] text-sm;
+    @apply font-heading  text-[#929292] text-sm mb-4;
   }
   .pricing-card li {
-    @apply text-lg text-[#393939];
+    @apply text-lg text-[#393939] mb-3;
   }
   .pricing-card a {
-    @apply w-full rounded-full rounded-tr-none !important;
+    @apply w-full rounded-full rounded-tr-none mt-16 !important;
   }
   /* FAQ container */
   .faq-container {
-    @apply shadow-md py-4 px-8;
+    @apply shadow-xl py-4 px-8;
   }
   .faq-container button {
     @apply font-semibold text-lg;
@@ -120,10 +128,20 @@
   .faq-container p {
     @apply text-[#363049] text-sm hidden;
   }
+  /* Footer section */
+  .footer-section h3,
+  .footer-section figure {
+    @apply mb-6;
+  }
+  .footer-section li,
+  .footer-section p,
+  .footer-section a {
+    @apply mb-2 block;
+  }
   /* Buttons */
   .btn {
     @apply inline-block py-2 px-5 text-sm font-semibold 
-    rounded shadow-md hover:bg-opacity-50 !important;
+    rounded shadow-md hover:bg-opacity-50 hover:no-underline !important;
   }
   .btn-primary {
     @apply bg-primary text-white  !important;
