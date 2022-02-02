@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-body text-base;
+    @apply font-body text-base overflow-x-hidden;
   }
   h1,
   h2 {
@@ -120,13 +120,13 @@
   }
   /* FAQ container */
   .faq-container {
-    @apply shadow-xl py-9 px-8 w-full flex-col-center h-max;
+    @apply shadow-xl py-9 px-8 w-full h-max;
   }
   .faq-container button {
-    @apply font-semibold text-lg;
+    @apply font-semibold text-lg text-[#1B1139] flex-center gap-x-8;
   }
   .faq-container p {
-    @apply text-[#363049] text-sm hidden overflow-hidden;
+    @apply text-[#363049] text-sm hidden overflow-hidden pl-12 mt-8;
   }
   /* Footer section */
   .footer-section h3,
@@ -140,18 +140,17 @@
   }
   /* Buttons */
   .btn {
-    /* py-4 px-6 */
-    @apply inline-block py-3 px-8  text-sm font-semibold 
-    rounded shadow-md hover:bg-opacity-50 hover:no-underline !important;
+    @apply py-3 px-8  text-sm font-semibold 
+    rounded shadow-md hover:no-underline;
   }
   .btn-primary {
-    @apply bg-primary text-white  !important;
+    @apply bg-primary text-white hover:bg-opacity-50 !important;
   }
   /* hover:border-primary hover:bg-transparent hover:text-black-dark */
   .btn-secondary {
-    @apply bg-white text-black-dark !important;
+    @apply bg-white text-black-dark hover:bg-opacity-50 !important;
   }
   .btn-tertiary {
-    @apply bg-tertiary text-white !important;
+    @apply bg-tertiary text-white hover:bg-opacity-50 !important;
   }
 }
