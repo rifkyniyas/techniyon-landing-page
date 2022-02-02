@@ -29,7 +29,7 @@
 
 @layer utilities {
   .grid-center {
-    @apply grid justify-items-center content-center;
+    @apply grid justify-items-center;
   }
   .flex-center {
     @apply flex justify-center items-center;
@@ -120,13 +120,13 @@
   }
   /* FAQ container */
   .faq-container {
-    @apply shadow-xl py-4 px-8;
+    @apply shadow-xl py-9 px-8 w-full flex-col-center h-max;
   }
   .faq-container button {
     @apply font-semibold text-lg;
   }
   .faq-container p {
-    @apply text-[#363049] text-sm hidden;
+    @apply text-[#363049] text-sm hidden overflow-hidden;
   }
   /* Footer section */
   .footer-section h3,
