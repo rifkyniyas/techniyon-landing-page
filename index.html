@@ -14,29 +14,43 @@
     <div class="min-h-[95vh] relative bg-[#F9F9FF]">
       <div class="blur-circle absolute top-0 left-0"></div>
       <div class="blur-circle absolute top-2/4 right-0"></div>
-      <header class="flex justify-between border-b border-b-[#EAE8F3] py-10 px-14">
+      <header class="flex justify-between items-center border-b border-b-[#EAE8F3] 
+        py-8 md:py-10 px-14 relative">
         <a href="#">
           <img src="./images/logo.svg" alt="Logo">
         </a>
-        <nav class="navbar hidden">
-          <a href="#" class="flex-center gap-x-1">
-            FEATURES
-            <span class="iconify" data-icon="charm:chevron-down" 
-            data-width="12" data-height="12"></span>
-          </a>
+        <nav class="navbar hidden" id="navbar">
+          <div class="relative">
+            <button class="flex-center gap-x-1" id="dropdownBtn">
+              FEATURES
+              <span class="iconify" data-icon="charm:chevron-down" data-width="12" data-height="12"></span>
+            </button>
+            <div class="flex flex-col hidden absolute bg-white mt-2 py-2 rounded" 
+              id="dropdownContent">
+              <a href="#" class=" py-2 px-3">Productivity</a>
+              <a href="#" class=" py-2 px-3">Efficiency</a>
+              <a href="#" class=" py-2 px-3">Managament</a>
+            </div>
+          </div>
           <a href="#">PRICING</a>
           <a href="#">WATCH A DEMO</a>
+          <a href="#" class="btn btn-secondary hide-desktop">LOG IN</a>
+          <a href="#" class="btn btn-primary hide-desktop">SIGN UP</a>
         </nav>
-        <div class="flex gap-x-4">
+        <div class="flex gap-x-4 hide-mobile">
           <a href="#" class="btn btn-secondary">LOG IN</a>
           <a href="#" class="btn btn-primary">SIGN UP</a>
         </div>
+        <div id="toggleNavBtn">
+          <span class="iconify hide-desktop" data-icon="charm:menu-hamburger" 
+            data-height="24" data-width="24"></span>
+        </div>
       </header>
-      <section class="container flex-col-center text-center max-w-4xl">
+      <section class="container flex-col-center text-center max-w-4xl mobile-padding">
         <h1>We Help you to Grow Your BUSINESS</h1>
         <p class="mb-10">Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way
         everything joy alteration boisterous the attachment.</p>
-        <a href="#" class="btn btn-primary flex-center rounded-xl gap-x-4">
+        <a href="#" class="btn btn-primary py-2 px-4 flex-center rounded-xl gap-x-4">
           <span>GET STARTED</span> 
           <span class="h-11 w-11 flex-center bg-white rounded-xl">
             <span class="iconify text-primary" data-icon="ant-design:arrow-right-outlined" 
@@ -60,7 +74,7 @@
       </div> -->
     </div>
     <figure class="grid-center items-center grid-cols-2 md:grid-cols-5 
-      max-w-5xl mx-auto md:gap-x-16 gap-y-16 py-24">
+      max-w-5xl mx-auto md:gap-x-16 gap-y-16 py-24 mobile-padding">
       <img src="./images/slack.svg" alt="Slack logo">
       <img src="./images/google.svg" alt="Google logo">
       <img src="./images/deloitte.svg" alt="Deloitte logo">
@@ -68,7 +82,7 @@
       <img src="./images/samsung.svg" alt="Samsung logo" class="col-span-2 md:col-span-1">
     </figure>
     <main>
-      <div class="grid-center col-md-2 gap-x-56 gap-y-16 py-24">
+      <div class="grid-center col-md-2 gap-x-56 gap-y-16 py-24 mobile-padding">
         <figure class="flex-center">
           <img src="./images/about-image-1.svg" alt="Productivity">
         </figure>
@@ -78,10 +92,10 @@
           <p>From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household
           applauded incommode. Why kept very ever home mrs. Considered sympathize ten uncommonly occasional assistance sufficient
           not. Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.</p>
-          <a href="#" class="btn btn-primary py-0">Explore Features</a>
+          <a href="#" class="btn btn-primary">Explore Features</a>
         </section>
       </div>
-      <div class="grid-center col-md-2 gap-x-56 gap-y-16 py-24">
+      <div class="grid-center col-md-2 gap-x-56 gap-y-16 py-24 mobile-padding">
         <figure class="md:order-2 flex-center">
           <img src="./images/about-image-2.svg" alt="Productivity">
         </figure>
@@ -99,7 +113,7 @@
       </div>
       <section class="py-24"> 
         <h2 class="text-center mb-16">Our Pricing Policy</h2>
-        <div class="grid-center col-md-2 max-w-4xl mx-auto">
+        <div class="grid-center col-md-2 max-w-4xl mx-auto gap-y-8 mobile-padding">
           <article class="pricing-card">
             <h3>Basic Package</h3>
             <div>
@@ -148,7 +162,7 @@
       </section>
       <section class="max-w-6xl mx-auto py-24">
         <h2 class="text-center mb-16">Frequently Asked Questions</h2>
-        <div class="grid-center col-md-2 grid-rows-3 gap-x-8 gap-y-4">
+        <div class="grid-center col-md-2 grid-rows-3 gap-x-8 gap-y-4 mobile-padding">
           <article class="faq-container">
             <button class="faq_button relative z-20">
               <span class="iconify relative -z-10 pointer-events-none" data-icon="akar-icons:plus" 
@@ -225,14 +239,14 @@
       </section>
     </main>
     <footer>
-      <section class="max-w-3xl mx-auto flex-col-center gap-y-16 py-44">
+      <section class="max-w-3xl mx-auto flex-col-center gap-y-16 py-44 mobile-padding">
         <h2 class="font-body font-medium text-6xl text-center">
           People who are ready took these courses!
         </h2>
         <a href="#" class="btn btn-primary">Schedule demo</a>
       </section>
       <div class="max-w-6xl mx-auto grid-center grid-cols-1 md:grid-cols-4 md:grid-rows-2">
-        <div class="footer-section">
+        <div class="footer-section col-span-1">
           <figure>
             <img src="./images/logo-white.svg" alt="Logo">
           </figure>

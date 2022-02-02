@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply text-sm md:text-base;
+  }
   body {
     @apply font-body text-base overflow-x-hidden;
   }
@@ -16,6 +19,9 @@
   h2 {
     @apply text-4xl;
   }
+  header a {
+    @apply hover:underline hover:text-tertiary;
+  }
   hr {
     @apply bg-[#F1F3F8] border-none h-[2px] my-10;
   }
@@ -23,7 +29,7 @@
     @apply bg-black-dark text-white;
   }
   footer a {
-    @apply hover:underline hover:text-secondary;
+    @apply hover:underline hover:text-tertiary;
   }
 }
 
@@ -46,6 +52,9 @@
   .col-md-3 {
     @apply grid-cols-1 md:grid-cols-3;
   }
+  .mobile-padding {
+    @apply px-8 md:px-0;
+  }
   .hide-mobile {
     @apply hidden md:block !important;
   }
@@ -63,15 +72,16 @@
     @apply navbar-mobile md:navbar-desktop;
   }
   .navbar-mobile {
-    width: calc(100% - 4rem);
-    @apply absolute top-full left-auto rounded right-auto flex flex-col items-center py-8 
-    bg-white gap-y-4;
+    width: calc(100% - 7rem);
+    @apply absolute top-full left-auto rounded-xl right-auto flex flex-col items-center py-8 
+    bg-white gap-y-8;
   }
   .navbar-desktop {
     @apply md:static md:flex md:bg-transparent md:flex-row md:items-center md:mr-0 
     md:w-fit md:border-t-0 md:text-white md:px-5 md:rounded-bl-xl md:py-0 !important;
   }
-  .navbar a {
+  .navbar a,
+  .navbar button {
     @apply mx-3 text-gray text-sm;
   }
   .blur-circle {
@@ -80,9 +90,6 @@
     @apply bg-primary w-64 h-64 blur-[500px];
   }
   /* About us section */
-  /* .about-us-section {
-    @apply pl-20;
-  } */
   .about-us-section h4 {
     @apply text-lg font-medium w-fit rounded-lg text-primary bg-secondary
       py-3 px-7 mb-10;

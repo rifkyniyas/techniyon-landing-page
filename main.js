@@ -1,5 +1,4 @@
-console.log("SCRIPT LOADED SUCCESSFULLY")
-
+//FAQ Toggle 
 const faqButtons = document.getElementsByClassName("faq_button");
 
 for (let i = 0; i < faqButtons.length; i++) {
@@ -17,3 +16,20 @@ for (let i = 0; i < faqButtons.length; i++) {
     faqAnswer.style.display = "block"
   });
 }
+
+//Dropdown Toggle
+document.querySelector('#dropdownBtn').addEventListener('click', () => {
+  document.querySelector('#dropdownContent').classList.toggle('hidden')
+})
+
+//Toggle Navbar
+const navbar = document.querySelector('#navbar')
+document.querySelector('#toggleNavBtn').addEventListener('click', () => {
+  console.log('here')
+  const isNavHidden  = navbar.classList.contains('hidden')
+  navbar.classList.toggle('hidden')
+  // if (isNavHidden) return toggleBtn.src = "./images/icon-close.svg"
+  // //Else
+  // return toggleBtn.src = "./images/icon-hamburger.svg"
+})
+console.log(document.querySelector('#toggleNavBtn'))
