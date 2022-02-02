@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="min-h-screen relative bg-[#F9F9FF]">
+    <div class="min-h-[95vh] relative bg-[#F9F9FF]">
       <div class="blur-circle absolute top-0 left-0"></div>
       <div class="blur-circle absolute top-2/4 right-0"></div>
       <header class="flex justify-between border-b border-b-[#EAE8F3] py-10 px-14">
@@ -34,18 +34,34 @@
         everything joy alteration boisterous the attachment.</p>
         <a href="#" class="btn btn-primary">GET STARTED</a>
       </section>
-      <!-- <figure class="absolute top-1/3">
-        <img src="./images/card-audience.svg" alt="Audience Card" class="">
-      </figure>
-      <figure class="absolute bottom-0 left-1/4">
-        <img src="./images/card-overview.svg" alt="Overview Card" class="">
-      </figure>
-      <figure class="absolute bottom-0 left-2/4">
-        <img src="./images/card-customers.svg" alt="Customers Card" class="">
-      </figure>
-      <figure class="absolute bottom-0 left-3/4">
-        <img src="./images/card-employees.svg" alt="Employees Card" class="">
-      </figure> -->
+      <!-- <div class="flex-col-center">
+        <figure class="md:absolute top-1/3 left-4">
+          <img src="./images/card-audience.svg" alt="Audience Card" class="">
+        </figure>
+        <figure class="md:absolute -bottom-16 left-10">
+          <img src="./images/card-overview.svg" alt="Overview Card" class="">
+        </figure>
+        <figure class="md:absolute -bottom-16 left-1/3">
+          <img src="./images/card-customers.svg" alt="Customers Card" class="">
+        </figure>
+        <figure class="md:absolute bottom-0 left-3/4">
+          <img src="./images/card-employees.svg" alt="Employees Card" class="">
+        </figure>
+      </div> -->
+      <div class="grid grid-cols-3 absolute -bottom-10">
+        <figure class="col-span-3">
+          <img src="./images/card-audience.svg" alt="Audience Card" class="">
+        </figure>
+        <figure class="">
+          <img src="./images/card-overview.svg" alt="Overview Card" class="">
+        </figure>
+        <figure class="">
+          <img src="./images/card-customers.svg" alt="Customers Card" class="">
+        </figure>
+        <figure class="">
+          <img src="./images/card-employees.svg" alt="Employees Card" class="">
+        </figure>
+      </div>
     </div>
     <figure class="grid-center items-center grid-cols-2 md:grid-cols-5 
       max-w-5xl mx-auto md:gap-x-16 gap-y-16 py-24">
