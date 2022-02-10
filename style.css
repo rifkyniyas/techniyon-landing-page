@@ -127,13 +127,14 @@
   }
   /* FAQ container */
   .faq-container {
-    @apply shadow-xl py-9 px-8 w-full h-max;
+    @apply shadow-xl py-9 px-8 w-full h-min;
   }
   .faq-container button {
-    @apply font-semibold text-lg text-[#1B1139] flex-center gap-x-8;
+    @apply font-semibold text-lg text-[#1B1139] flex-center gap-x-8 mx-auto;
   }
   .faq-container p {
-    @apply text-[#363049] text-sm hidden overflow-hidden pl-12 mt-8;
+    @apply text-[#363049] text-sm overflow-hidden pl-12 
+      max-h-0 transition-[max-height] duration-75 ease-out;
   }
   /* Footer section */
   .footer-section h3,

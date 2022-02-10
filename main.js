@@ -6,14 +6,16 @@ for (let i = 0; i < faqButtons.length; i++) {
     const plusIcon = event.target.children[0]
     const minusIcon = event.target.children[1]
     const faqAnswer = event.target.nextElementSibling;
-    if (faqAnswer.style.display === "block") {
+
+    faqAnswer.classList.toggle('mt-8')
+    if (faqAnswer.style.maxHeight) {
       plusIcon.style.display = "block"
       minusIcon.style.display = "none"
-      return faqAnswer.style.display = "none"
+      return faqAnswer.style.maxHeight = null
     }
     plusIcon.style.display = "none"
     minusIcon.style.display = "block"
-    faqAnswer.style.display = "block"
+    faqAnswer.style.maxHeight = faqAnswer.scrollHeight + "px";
   });
 }
 
